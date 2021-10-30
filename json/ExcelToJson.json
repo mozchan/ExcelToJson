@@ -1,0 +1,52 @@
+{
+  "director_a": {
+    "directorName": "A",
+    "message": "Aです。よろしくおねがいします。"
+  },
+  "director_b": {
+    "directorName": "B",
+    "message": "Bです。よろしくおねがいします。"
+  },
+  "director_c": {
+    "directorName": "C",
+    "message": "Cです。よろしくおねがいします。"
+  },
+  "director_d": {
+    "directorName": "D",
+    "message": "Dです。よろしくおねがいします。"
+  },
+  "director_e": {
+    "directorName": "E",
+    "message": "Eです。よろしくおねがいします。"
+  },
+  "group_1": {
+    "groupName": "グループ１",
+    "job": "グループ１はこんな仕事をしています。",
+    "memberName": "・チーム1：Aさん、Bさん、Cさん、Dさん<br>・チーム2：Fさん、Eさん",
+    "message": "グループ１よろしくおねがいします。"
+  },
+  "group_2": {
+    "groupName": "グループ２",
+    "job": "グループ２はこんな仕事をしています。",
+    "memberName": "Aさん、Bさん、Cさん、Dさん",
+    "message": "グループ２よろしくおねがいします。"
+  },
+  "group_3": {
+    "groupName": "グループ３",
+    "job": "グループ３はこんな仕事をしています。",
+    "memberName": "Aさん、Bさん",
+    "message": "グループ３よろしくおねがいします。"
+  },
+  "group_4": {
+    "groupName": "グループ４",
+    "job": "グループ４はこんな仕事をしています。",
+    "memberName": "【チーム1】<br>・リーダー：Aさん<br>・メンバー：Bさん、Dさん<br>【チーム2】<br>・リーダー：Cさん<br>・メンバー：Eさん、Fさん",
+    "message": "グループ４よろしくおねがいします。"
+  },
+  "group_5": {
+    "groupName": "グループ５",
+    "job": "グループ５はこんな仕事をしています。",
+    "memberName": "Aさん、Bさん、Cさん、Dさん",
+    "message": "グループ５よろしくおねがいします。"
+  }
+}
