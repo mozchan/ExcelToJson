@@ -9,9 +9,9 @@ let bookCategory, bookProfileDirector, bookProfileGroup
 
 workbook.SheetNames.forEach(sheet => {
   // 各シート名の変数名を指定
-  if ("項目名" == sheet) bookCategory = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
-  if ("役職" == sheet) bookProfileDirector = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
-  if ("グループ" == sheet) bookProfileGroup = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
+  if ("項目名" === sheet) bookCategory = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
+  if ("役職" === sheet) bookProfileDirector = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
+  if ("グループ" === sheet) bookProfileGroup = XLSX.utils.sheet_to_json(workbook.Sheets[sheet])
 })
 
 const bookProfiles = bookProfileDirector.concat(bookProfileGroup) //各 Profile データを結合
