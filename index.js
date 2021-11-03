@@ -20,7 +20,7 @@ const bookProfiles = bookProfileDirector.concat(bookProfileGroup) //各 Profile 
 let keyEN
 
 const newBookProfiles = bookProfiles.map(profileData => {
-  let newProfileData = {}
+  const newProfileData = {}
   for (const key in profileData) {
     if (Object.hasOwnProperty.call(profileData, key)) {
       replaceKeyName(key) // key の英語表記を取得
