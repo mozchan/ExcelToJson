@@ -17,13 +17,11 @@ workbook.SheetNames.forEach(sheet => {
 const bookProfiles = bookProfileDirector.concat(bookProfileGroup) //各 Profile データを結合
 
 // 2. データの一部を変換 (key:日本語表記 => 英語表記 / 改行文字 => HTML タグ)
-let keyEN
-
 const newBookProfiles = bookProfiles.map(profileData => {
   const newProfileData = {}
   for (const key in profileData) {
     if (Object.hasOwnProperty.call(profileData, key)) {
-      replaceKeyName(key) // key の英語表記を取得
+      const keyEN = replaceKeyName(key) // key の英語表記を取得
       newProfileData[keyEN] = profileData[key].replace(/[\n]/g, '<br>') // 改行文字を HTML タグに変換し代入
     }
   }
@@ -32,10 +30,9 @@ const newBookProfiles = bookProfiles.map(profileData => {
 
 // 項目名シートに倣って、日本語表記の key を英語表記で返す
 function replaceKeyName(keyJP) {
-  bookCategory.map(categoryData => {
-    if (categoryData.日本語 == keyJP) keyEN = keyJP.replace(keyJP, categoryData.英語)
-    return keyEN
-  })
+  const index = bookCategory.findIndex((categoryData) => categoryData.日本語 === keyJP)
+  const keyEn = keyJP.replace(keyJP, bookCategory[index].英語)
+  return keyEn
 }
 
 // 3. オブジェクト内の id を使って、各オブジェクトをグループ化
